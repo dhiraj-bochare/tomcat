@@ -11,13 +11,6 @@ pool:
 
 steps:
 - script: echo Hello, world!
-- task: S3Upload@1
-  inputs:
-    awsCredentials: 'AWS-Dhiraj'
-    regionName: 'us-east-1'
-    bucketName: 'tomcat9'
-    globExpressions: '**'
-  displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
